@@ -1,0 +1,24 @@
+meta {
+  name: Atualizar tudo
+  type: http
+  seq: 10
+}
+
+put {
+  url: http://localhost:8080/contas/5
+  body: json
+  auth: none
+}
+
+body:json {
+  {"agencia": 14314241,
+     "numeroConta": 41241412,
+      "digitoVerificador": 2,
+      "nome": "Davi",
+      "cpf": "120.231.312-23",
+      "tipoConta": 1,
+      "numeroCartao": "123123",
+      "senha": "davi123",
+     "saldo": 300000
+  }
+}

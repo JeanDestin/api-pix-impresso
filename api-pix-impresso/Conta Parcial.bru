@@ -1,0 +1,19 @@
+meta {
+  name: Conta Parcial
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:8080/contas/1/updateCadastro
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Joao",
+    "cpf": "123.231.312-23",
+    "tipoConta": 2
+  }
+}
